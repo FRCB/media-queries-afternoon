@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  margin:0;
+}
+
+.container {
+  background-image: url('https://www.neolith.com/media/sizem_colmodelo/es_32_mod_fotolupa_11064.jpg');
+  height: 110vh;
+}
+
+.navbar-fixed {
+  position: fixed;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  height: 7vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  color: #ffc107;
+  white-space: nowrap;
+  margin: auto 5%;
+}
+
+menu {
+    margin: auto 5%;
+}
+
+button {
+  background-color: #ffc107;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border-radius: .25rem;
+  padding: 10px;
+  border: none;
+}
+
+.menu2 {
+  display: none;
+}
+
+ul {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  list-style: none;
+  margin: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 3vh;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif, bold;
+  font-size: 18px;
+  margin: 16px 0;
+  color: white
+}
+
+.smooth {
+  animation-name: hop;
+  animation-duration: 2s;
+}
+
+@keyframes hop {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  } 
+}
+
+
+.insideBox {
+  display: flex;
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Times New Roman', Times, serif, italic;
+  margin-top: 0;
+  font-style: italic;
+  padding-top: 25vh; 
+  font-size: 30px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif, bold;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.button2 {
+  background-color: #ffc107;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  border-radius: .25rem;
+  padding: 10px;
+  border: none;
+}
+
+@media (min-width: 1320px) {
+  h1{
+    font-size: 40px;
+    margin: auto 20px;
+  }
+  
+  button {
+    display: none;
+  }
+  .menu2 {
+    display: flex;
+    position: absolute;
+    width: 400px;
+    height: 7vh;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    right: 500px
+  }
+  p {
+    font-size: 30px;
+    margin: auto 20px;
+    padding: auto;
+  }
+
+  .insideBox>h4 {
+    font-size: 60px;
+  }
+
+  .insideBox>h3 {
+    font-size: 120px;
+    margin-bottom: 80px
+  }
+
+  .insideBox>button {
+    display: flex;
+    font-size: 30px;
+  }
+
+}
+
+
